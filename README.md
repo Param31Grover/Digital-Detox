@@ -28,8 +28,8 @@ Digital Detox is an application aimed to help users cure mobile addiction. It us
  </table>
 ___
 
-**Project**:-
 
-* Feature made for the startup Atom - Build a habit of meditation
+
+
 
 
