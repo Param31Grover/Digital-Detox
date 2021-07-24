@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedIconButton">
+        <attr name="button_label" format="string" />
+        <attr name="button_icon" format="reference" />
+        <attr name="gravity">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+        <attr name="button_background" format="reference" />
+        <attr name="button_tint" format="color" />
+        <attr name="font" format="reference" />
+        <attr name="textColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckView">
+        <attr name="checkView_strokeWidth" format="dimension"/>
+        <attr name="checkView_strokeColor" format="color"/>
+    </declare-styleable>
+
+</resources>

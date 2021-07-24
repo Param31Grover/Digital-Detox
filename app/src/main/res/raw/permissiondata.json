@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Usage Access",
+    "icon": "res://ic_eye",
+    "description": "To get the Top Package running on Android",
+    "isPermissionGranted": false
+  },
+  {
+    "id": 2,
+    "name": "Notification Access",
+    "icon": "res://ic_eye",
+    "description": "To prevent misjudgement from other pop-up notifications",
+    "isPermissionGranted": false
+  },
+  {
+    "id": 3,
+    "name": "Battery Optimization",
+    "icon": "res://ic_eye",
+    "description": "To prevent OS kill service",
+    "isPermissionGranted": false
+  }
+]

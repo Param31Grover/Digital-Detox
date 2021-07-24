@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.1"
+        android:text="Patience * Session 5"
+        android:textColor="@color/text700"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.1"
+        android:text="“Your future is created by what you can do today, not tomorrow”"
+        android:textColor="@color/text700"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <RelativeLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tree_land_blue_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sub_header">
+
+        <com.jackandphantom.circularprogressbar.CircleProgressbar
+            android:id="@+id/circular_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tree_land_blue_border"
+            app:cpb_backgroundProgressColor="@color/background_trans"
+            app:cpb_backgroundProgressWidth="0"
+            app:cpb_foregroundProgressColor="@color/background_green"
+            app:cpb_foregroundProgressWidth="25"
+            app:cpb_roundedCorner="true"
+            app:cpb_touchEnabled="true" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ic_grown_tree" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/senregular"
+        android:lineSpacingMultiplier="1.1"
+        android:text="3:00"
+        android:textAlignment="center"
+        android:textColor="@color/text700"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_giveup"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+    <TextView
+        android:id="@+id/tv_giveup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Up!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
